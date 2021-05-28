@@ -16,3 +16,13 @@ function CRT_clustersize(n1, rho, d, alpha, power_level)
         n2 +=1
     end
 end
+
+
+function CRT_percluster(n2, rho, d, alpha, power_level, covariate_corr)
+    n1 = 2
+    while n1<1000
+        design_effect = 1 + (n1*(1-covariate_corr^2)-1)*rho-(n1*covariate_corr^2)/(n1-1)
+    end
+
+
+end
